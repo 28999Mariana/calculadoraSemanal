@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora-Gastos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Expense Calculator</h1>
+        
+        <!-- Contenido de la calculadora -->
+        <label for="numeroDias">Number of days of the week:</label>
+        <input type="number" id="numeroDias" placeholder="Enter the number of days of the week">
+
+        <label for="gastoDiario">Diary spend:</label>
+        <input type="number" id="gastoDiario" placeholder="Enter daily expense">
+        <button onclick="agregarGastoDiario()">Add Daily Expense</button>
+
+        <!-- Tabla para mostrar los gastos diarios -->
+        <table id="tablaGastos">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Diary spend</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTablaGastos"></tbody>
+        </table>
+
+        <div id="gastoSemanalContainer"></div>
+
+        <button onclick="calcularGastoSemanal()">Calculate Weekly Expense</button>
+    </div>
+    
+</body>
+</html>
